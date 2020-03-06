@@ -32,4 +32,15 @@ public class TestASumar {
 		assertNull(resultado);
 	}
 
+	/**
+	 * Test para más de un dígito
+	 * 
+	 */
+	@Test 
+	public void testMasDeUnDigito() {
+		 ASumar sumi = new ASumar(3433);
+	     String resultado = sumi.mostrar("3433");
+	     assertEquals("3433 = 3+4+3+3=13",resultado );
+		
+	}
 }
