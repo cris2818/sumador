@@ -22,8 +22,13 @@ public class ASumar {
 	 * @return devuelve una cadena donde muestra el número introducido y el resultado de sumar sus dígitos
 	 */
 	public String mostrar(String cad) {
-		 String numero = cad;
-	     return (numero + " = " + valor);
+		String numero = cad;
+		String cadvalor = Integer.toString(valor);
+	
+		if(cadvalor.charAt(0) == '-')					
+			return null;	
+
+		return numero + " = " + valor;
 	}
 
 }
